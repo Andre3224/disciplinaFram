@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
     <title>Início</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        /* Menu lateral */
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h2 {
+            color: #ecf0f1;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 0;
+            transition: background 0.2s;
+        }
+
+        .sidebar a:hover {
+            background-color: #34495e;
+        }
+
+        /* Conteúdo principal */
+        .main-content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .main-content h1 {
+            color: #2c3e50;
+        }
+
+        .placeholder {
+            margin-top: 20px;
+            border: 2px dashed #aaa;
+            padding: 20px;
+            color: #777;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo ao sistema de anúncios!</h1>
-    <p><a href="/cad/usuario">Cadastrar Usuário</a></p>
-    <p><a href="/sobre">Sobre</a></p>
+
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="/cadastro">Cadastro de Perfil</a>
+        <a href="/anuncios">Anúncios</a>
+        <a href="/painel">Painel do Usuário</a>
+        <a href="/favoritos">Favoritos</a>
+        <a href="/cadastro-anuncio">Cadastro de Anúncio</a>
+        <a href="/compra">Compra de Produto</a>
+        <a href="/sobre">Sobre&Direitos do Consumidor</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Bem-vindo ao sistema Compre&Venda!</h1>
+        <p>Use o menu à esquerda para navegar pelo sistema.</p>
+
+        <div class="placeholder">
+            <!-- Espaço reservado para exibição futura de anúncios -->
+            <strong>Espaço reservado para anúncios</strong>
+        </div>
+    </div>
+
 </body>
 </html>
